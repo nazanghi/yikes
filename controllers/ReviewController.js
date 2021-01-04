@@ -66,10 +66,23 @@ const DeleteReview = async (request, response) => {
     }
 }
 
+const GetReviewsByUser = async (request, response) => {
+    try{
+        const userId = request.params.user_id;
+        const userReviews = await Review.findAll({
+            where: {user_id: userId}
+        })
+        console.log('GetReviewsByUser hits')
+    }catch(error){
+        console.log('GetReviewsByUser fails')
+        throw error
+    }
+}
 module.exports = {
     CreateReview,
     GetOneReview,
     GetAllReviews,
+    GetReviewsByUser,
     EditReview,
     DeleteReview
 }
@@ -79,6 +92,8 @@ module.exports = {
 //   88   88__   88b  d88 88__dP 88       dPYb     88   88__   
 //   88   88""   88YbdP88 88"""  88  .o  dP__Yb    88   88""   
 //   88   888888 88 YY 88 88     88ood8 dP""""Yb   88   888888 
+
+
 // const Review = async (request, response) => {
 //     try{
 
