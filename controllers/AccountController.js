@@ -41,6 +41,7 @@ const GetAccountByUserId = async (request, response) => {
         const accountDetails = await Account.findAll({
             where: {user_id: request.body.user_id}
         })
+        response.send(accountDetails[0])
         console.log('GetOneAccountByUserId hits')
     } catch (error) {
         console.log('GetOneAccountByUserId fails')
