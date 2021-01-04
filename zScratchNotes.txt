@@ -30,6 +30,10 @@ controllers
 
 routes
 
+sequelize bs/models
+
+middleware
+
 
          _ .-') _     ('-.   ('-.      .-')    
         ( (  OO) )  _(  OO) ( OO ).-. ( OO ).  
@@ -42,3 +46,6 @@ routes
   `--'   `-------'  `------'`--' `--' `-----'  
 
 incorporate Yelp API
+
+add comments 
+    with upvotes and downvotes
