@@ -7,9 +7,9 @@ const CreateAccount = async (request, response) => {
         }
         let newAccount = await Account.create(accountDetails)
         response.send(newAccount)
-        console.log('!** Account hits')
+        console.log('CreateAccount hits')
     } catch (error) {
-        console.log('!** Account fails')
+        console.log('CreateAccount fails')
         throw error
     }
 }
