@@ -30,9 +30,8 @@ controllers
 
 routes
 
-sequelize bs/models
 
-middleware
+
 
 
          _ .-') _     ('-.   ('-.      .-')    
