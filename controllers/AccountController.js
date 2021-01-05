@@ -48,11 +48,27 @@ const GetAccountByUserId = async (request, response) => {
         throw error
     }
 }
- 
+
+const EditAccount = async (request, response) => {
+    try{
+        let accountId = parseInt(request.params.accountId)
+        let accountDetails = request.body
+        let editedAccount = await Account.update(accountDetails, {
+            where: {id: accountId}
+        })
+        console.log('EditAccount hits, accountDetails: ', accountDetails)
+        response.send(editedAccount)
+    }catch (error) {
+        console.log('EditAccount fails, accountDetails: ', accountDetails)
+        throw error
+    }
+}
+c
 
 module.exports = {
     CreateAccount,
     GetOneAccount,
     GetAllAccounts,
-    GetAccountByUserId
+    GetAccountByUserId,
+    EditAccount
 }
