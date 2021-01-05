@@ -26,10 +26,55 @@
 | '--'  / |  | |  |(_'  '--'\|  |\   \ |  `---.|  | \   |  |  '-'  / 
 `------'  `--' `--'   `-----'`--' '--' `------'`--'  `--'  `------'  
 
-controllers
+CONTROLLERS 
+  TagController
 
-routes
+  ReviewController may need more actions
 
+
+ROUTERS
+  Tag Router
+
+
+
+
+           _  .-')                    .-') _  .-') _     ('-.       .-') _  _ .-') _   
+          ( \( -O )                  ( OO ) )(  OO) )  _(  OO)     ( OO ) )( (  OO) )  
+   ,------.,------.  .-'),-----. ,--./ ,--,' /     '._(,------.,--./ ,--,'  \     .'_  
+('-| _.---'|   /`. '( OO'  .-.  '|   \ |  |\ |'--...__)|  .---'|   \ |  |\  ,`'--..._) 
+(OO|(_\    |  /  | |/   |  | |  ||    \|  | )'--.  .--'|  |    |    \|  | ) |  |  \  ' 
+/  |  '--. |  |_.' |\_) |  |\|  ||  .     |/    |  |  (|  '--. |  .     |/  |  |   ' | 
+\_)|  .--' |  .  '.'  \ |  | |  ||  |\    |     |  |   |  .--' |  |\    |   |  |   / : 
+  \|  |_)  |  |\  \    `'  '-'  '|  | \   |     |  |   |  `---.|  | \   |   |  '--'  / 
+   `--'    `--' '--'     `-----' `--'  `--'     `--'   `------'`--'  `--'   `-------'  
+
+SERVICES 
+  CategoryServices
+  TagServices
+  
+  may need to add to ReviewServices
+
+
+REDUCER
+  TagReducer
+  AuthReducer
+  CategoryReducer
+  ReviewReducer
+
+
+ACTIONS 
+  TagActions
+  Category Actions
+  Auth Actions
+  Review Actions
+
+TYPES/INDEX
+
+
+
+PAGES
+
+COMPONENTS
 
 
 
