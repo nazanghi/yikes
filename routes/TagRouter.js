@@ -1,16 +1,12 @@
 const Router = require('express').Router()
-const controlller = require('../controllers/TagController')
+const controller = require('../controllers/TagController')
 
-Router.post('/tag', controller.TagReviewToCategory)
+Router.post('/create', controller.CreateTag)
 
-Router.delete('/:tagId', controller.RemoveTagFromReview)
+Router.get('/:reviewId', controller.GetReviewTags)
+Router.get('/allReviews/:categoryId', controller.FetchByCategory)
+Router.get('/:categoryId/:reviewId', controller.GetTag)
 
-//get all tags on a review
-//get all reviews in a tag
-//get one particular tag
-Router.CRUD('/', controller.)
-Router.CRUD('/', controller.)
-Router.CRUD('/', controller.)
-
+Router.delete('/:tagId', controller.DeleteTagInstance)
 
 module.exports = Router

@@ -29,23 +29,23 @@ const DeleteTagInstance = async (request, response) => {
             }
         })
         console.log('TagController: DeleteTagInstance hits')
-        response.send(message: `Deleted Tag Id'd: ${tagId}`)
+        response.send({message: `Deleted Tag Id'd: ${tagId}`})
     }catch(error) {
         console.log('TagController: DeleteTagInstance fails')
         throw error
     }
 }
  
-const FetchByTag = async (request, response) => {
+const FetchByCategory = async (request, response) => {
     try {
         let categoryId = parseInt(request.params.categoryId)
         const allReviewsTagged = await Tag.findAll({
             where: {category_id: categoryId}
         })
-        console.log('TagController: FetchByTag hits')
+        console.log('TagController: FetchByCategory hits')
         response.send(allReviewsTagged)
     }catch(error) {
-        console.log('TagController: FetchByTag fails')
+        console.log('TagController: FetchByCategory fails')
         throw error
     }
 }
@@ -84,7 +84,7 @@ const GetTag = async (request, response) => {
 
 module.exports = {
     CreateTag,
-    FetchByTag,
+    FetchByCategory,
     GetReviewTags,
     DeleteTagInstance,
     GetTag

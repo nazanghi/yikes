@@ -26,15 +26,9 @@
 | '--'  / |  | |  |(_'  '--'\|  |\   \ |  `---.|  | \   |  |  '-'  / 
 `------'  `--' `--'   `-----'`--' '--' `------'`--'  `--'  `------'  
 
-CONTROLLERS 
-  TagController
 
-  ReviewController may need more actions
-
-
-ROUTERS
-  Tag Router
-
+MODELS
+  review/update all for associations
 
 
 
@@ -48,12 +42,7 @@ ROUTERS
   \|  |_)  |  |\  \    `'  '-'  '|  | \   |     |  |   |  `---.|  | \   |   |  '--'  / 
    `--'    `--' '--'     `-----' `--'  `--'     `--'   `------'`--'  `--'   `-------'  
 
-SERVICES 
-  CategoryServices
-  TagServices
-  
-  may need to add to ReviewServices
-
+INDEX
 
 REDUCER
   TagReducer
@@ -68,7 +57,6 @@ ACTIONS
   Auth Actions
   Review Actions
 
-TYPES/INDEX
 
 
 
