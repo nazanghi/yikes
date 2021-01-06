@@ -45,17 +45,16 @@ MODELS
 INDEX
 
 REDUCER
+  ReviewReducer
+  CategoryReducer
   TagReducer
   AuthReducer
-  CategoryReducer
-  ReviewReducer
 
 
 ACTIONS 
-  TagActions
   Category Actions
+  TagActions
   Auth Actions
-  Review Actions
 
 
 

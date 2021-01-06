@@ -58,7 +58,7 @@ const DeleteReview = async (request, response) => {
                 id: reviewId
             }
         })
-        console.log('DeleteReview hits, DeletedReview:', ${reviewId})
+        console.log('DeleteReview hits, DeletedReview:', reviewId)
         response.send({message: `Deleted Review with id: ${reviewId}`})
     }catch(error){
         console.log('DeleteReview fails')
