@@ -7,11 +7,5 @@ module.exports = {
 
   down: async (queryInterface, Sequelize) => {
     return queryInterface.addColumn('accounts', 'username')
-    /**
-     * Add reverting commands here.
-     *
-     * Example:
-     * await queryInterface.dropTable('users');
-     */
   }
 };
