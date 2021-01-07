@@ -2,16 +2,11 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    return queryInterface.removeColumn('job', 'about')
+    return queryInterface.removeColumn('Users', 'job', 'about')
   },
 
   down: async (queryInterface, Sequelize) => {
-    return queryInterface.addColumn('job', 'about')
-    /**
-     * Add reverting commands here.
-     *
-     * Example:
-     * await queryInterface.dropTable('users');
-     */
+    return queryInterface.addColumn('Users', 'job', 'about')
+
   }
 };

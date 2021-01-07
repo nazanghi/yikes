@@ -42,6 +42,12 @@ MODELS
   \|  |_)  |  |\  \    `'  '-'  '|  | \   |     |  |   |  `---.|  | \   |   |  '--'  / 
    `--'    `--' '--'     `-----' `--'  `--'     `--'   `------'`--'  `--'   `-------'  
 
+
+make a layout component 
+  wrap my switch in the router
+  put the nav in the layout 
+
+
 INDEX
 
 REDUCER
@@ -80,3 +86,4 @@ incorporate Yelp API
 
 add comments 
     with upvotes and downvotes
+

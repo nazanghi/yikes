@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Category.belongsToMany(models.Review, {
         through: models.Tag,
-        foreginKey: "category_id",
+        foreignKey: "category_id",
         onDelete: "cascade",
         onUpdate: "cascade"
       })
