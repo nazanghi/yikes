@@ -5,7 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     static associate(models) {
-      User.hasOne(models.Account, {
+      User.hasOne(models.account, {
         foreignKey:'user_id',
         onDelete:'cascade',
         onUpdate:'cascade'

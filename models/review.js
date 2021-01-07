@@ -5,7 +5,7 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Review extends Model {
     static associate(models) {
-      Review.belongsTo(models.Account, {
+      Review.belongsTo(models.account, {
         foreignKey: 'account_id',
         onDelete: 'cascade',
         onUpdate: 'cascade'
